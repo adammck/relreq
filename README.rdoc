@@ -1,0 +1,18 @@
+Relative Require (relreq) is a tiny gem designed to make importing files within the
+same project a little more robust (and sane), without monkey-patching Kernel#require
+or other funny business.
+
+=== Sample Usage
+	
+	# OMFG
+	require File.expand_path(File.dirname(__FILE__) + "../../whatever.rb")
+
+	# alternatively...
+	relative_require "../../whatever.rb"
+	
+=== Installing
+
+Relative Require is distributed via GitHub[http://github.com/adammck/relreq]. To
+install it with the minimum of fuss:
+
+  $ sudo gem install adammck-relreq --source http://gems.github.com

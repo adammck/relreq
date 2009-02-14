@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
+#:include:../README.rdoc
+#:title:Relative Require
+#--
 # vim: noet
+#++
 
 def relative_require(str)
 	if m = caller[0].match(/^(.+):(\d+)/)
